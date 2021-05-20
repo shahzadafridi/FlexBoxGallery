@@ -20,6 +20,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import android.widget.LinearLayout
+import android.widget.RelativeLayout
+import android.widget.TextView
 import androidx.annotation.DrawableRes
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.flexbox.FlexboxLayoutManager
@@ -64,10 +67,10 @@ internal class CatAdapter : RecyclerView.Adapter<CatAdapter.MyViewHolder>() {
 
     class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-        private val imageView: ImageView = itemView.findViewById(R.id.imageview)
+        private val imageView: LinearLayout = itemView.findViewById(R.id.imageview)
 
         internal fun bindTo(@DrawableRes drawableRes: Int) {
-            imageView.setImageResource(drawableRes)
+            imageView.setBackgroundResource(drawableRes)
             val lp = imageView.layoutParams
             //var height = (300..350).random()
             //var width = (380..430).random()

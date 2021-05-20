@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">EGallerySampleApp</string>
+    <string name="test"><b>Hello World</b> \n </string>
 </resources>
